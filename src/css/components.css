@@ -1,0 +1,570 @@
+/* Header Styling Start */
+
+.header{
+  box-shadow: 0px 6px 9px  rgb(250, 125, 5);
+  border-radius: 10px;
+  padding:0 5%;
+  display: flex;
+  background-color: black;
+  width: 90%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  z-index: 1000;
+  margin-bottom: 10%;
+}
+
+.mainContent{
+position: absolute;
+}
+
+.header:first-child{
+  gap: 40%;
+}
+
+.name{
+color: rgb(250, 125, 5);
+letter-spacing: 2px;
+}
+
+.links{
+  padding-top: 1.5%;
+  transition: all 1s linear;
+width: 50%;
+}
+
+.links a{
+text-decoration: none;
+color: aqua;
+margin-left: 8%;
+border-radius: 10px;
+padding: 1%;
+transition: all 1s linear;
+}
+
+.links a:hover{
+border-bottom: 1px solid rgb(250, 125, 5) ;
+transition: all 1s linear;
+}
+/* Header Styling Ends */
+
+
+/*Home Styling Start*/
+
+.introduction{
+  padding: 5%;
+  color: bisque;
+  margin: 5%;
+  line-height: 50px;
+  width: 30%;
+}
+
+.introduction span{
+  color: aqua;
+}
+
+.introduction h2{
+  font-size: 45px;
+  color:  rgb(250, 125, 5) ;
+}
+
+.introduction h3{
+  font-size: 35px;
+  color:  rgb(250, 125, 5) ;
+}
+
+.carrier{
+    color:  rgb(250, 125, 5) ;
+    font-size: 28px;
+}
+
+.homeAddress{
+    color:  rgb(250, 125, 5) ;
+    font-size: 25px;
+}
+/*Home Styling Ends*/
+
+
+
+/*About Styling start*/
+
+.about{
+  color: aquamarine;
+  background-color: black;
+  margin: 0 5%;
+    border-radius: 10px;
+  box-shadow: 0px 0px 20px  rgb(250, 125, 5);
+  padding: 3%;
+  display: flex
+}
+
+.aboutDP{
+  width: 40%;
+  box-shadow: 0px 0px 2px  rgb(250, 125, 5);
+  margin-right: 5%;
+  background-image: url(../images/anceDP.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.aboutInfo{
+      border-radius: 10px;
+  box-shadow: 0px 0px 2px  rgb(250, 125, 5);
+  width: 65%;
+  padding: 0 4%;
+}
+
+.aboutInfo h1{
+  color:  rgb(250, 125, 5);
+
+}
+
+
+.aboutInfo p{
+ line-height: 40px;
+ word-spacing: 5px;
+
+}
+
+.skillsEducationAndEperience{
+
+}
+
+.skillsLinks{
+margin-top: 5%;
+padding: 1%;
+  border-radius: 10px;
+border: 1px solid rgb(250, 125, 5);
+}
+
+.skillsLinks a{
+  text-decoration: none;
+  color: rgb(250, 125, 5);
+  margin: 0 10%;
+  border-radius: 10px;
+  padding: .5% 1%;
+  transition: all 1s ease-in;
+}
+
+.skillsLinks a:hover{
+border-bottom: 2px solid aqua;
+  transition: all .7s ease-out;
+}
+
+.progContainer4{
+border: 1px solid aqua;
+border-radius: 20px;
+width: 90%;
+height: 15px;
+margin-bottom: 3%;
+}
+
+.progBar4{
+background-color: rgb(250, 125, 5) ;
+width: 90%;
+height: 100%;
+overflow: hidden;
+border-radius: 20px;
+}
+
+.progBar:hover{
+animation: progAnimation;
+animation-duration: 2s;
+animation-delay: 5s;
+
+}
+
+@keyframes progAnimation {
+  0%{
+    width: 0%;
+  }
+  
+   100%{
+    width: 90%;
+  }
+}
+
+.skieduespContainer{
+  height: 45vh;
+  padding-top: 1%;
+  overflow: hidden;
+}
+
+.educationContent{
+  margin: 2% 0 5% 5% ;
+  margin-bottom: 10%;
+}
+
+.educationContent h3{
+color: rgb(250, 125, 5);
+}
+
+
+.skillsContent{
+margin-left: 5%;
+display: flex;
+height: max-content;
+}
+
+.languages{
+  width: 45%;
+  border-right: .5px solid rgb(250, 125, 5);
+}
+
+.skillsContent h3,
+.skillsContent h4
+{
+ color: rgb(250, 125, 5);
+}
+
+.languages ul{
+  list-style-type: none;
+  line-height: 80px;
+}
+.frameWorks{
+ margin-left: 5%;
+}
+
+.frameWorks ul{
+    list-style-type: none;
+   line-height: 60px;
+}
+
+/*About Styling Ends*/
+
+/*Services and Works Styling Start*/
+
+.services,
+.works{
+  box-shadow: 0px 0px 20px  rgb(250, 125, 5);
+  color: aqua;
+  background-color: black;
+  margin: 0 5%;
+  border-radius: 10px;
+  padding:1% 3%;
+}
+
+.services h3,
+.works h3{
+  text-align: center;
+  color: rgb(250, 125, 5);
+  font-size: 45px;
+}
+
+.servicesCards{
+  display: flex;
+
+}
+
+.firstServiceCard,
+.secondServiceCard,
+.thirdServiceCard{
+   box-shadow: 0px 0px 2px  rgb(250, 125, 5);
+   width: 30%;
+   margin: 1%;
+   height: 500px;
+   border-radius: 10px;
+   padding: 1%;
+}
+
+.firstServiceCard{
+  background-image: url(../images/frontEnd.png);
+    background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.secondServiceCard{
+  background-image: url(../images/backEnd.png);
+    background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Services and Works Styling Ends*/
+
+
+/*Contact  Styling Satrts*/
+
+.contact{
+    box-shadow: 0px 0px 20px  rgb(250, 125, 5);
+  color: aqua;
+  background-color: black;
+  margin: 0 5%;
+  border-radius: 10px;
+  padding: 3%;
+  display: flex;
+}
+
+.leftContainer{
+  width: 40%;
+   box-shadow: 0px 0px 2px  rgb(250, 125, 5);
+  margin-right: 5%;
+  border-radius: 10px;
+    padding:0 2% 2% 2%;
+}
+
+.leftContainer h2{
+text-align: center;
+font-size: 45px;
+}
+
+.leftContainer h2 span{
+color: rgb(250, 125, 5);
+}
+
+.leftContainer h3{
+color: rgb(250, 125, 5);
+}
+
+.leftContainer ul{
+  list-style-type: none;
+  line-height: 50px;
+}
+
+.leftContainer ul li a{
+  text-decoration: none;
+  color: aqua;
+    transition: all .5s linear;
+}
+
+
+.leftContainer ul li a:hover{
+   padding: 2%;
+    color: rgb(250, 125, 5);
+  transition: all .5s linear;
+}
+
+.leftContainer ul li a span{
+  padding-left: 3%;
+}
+
+.socialLinks{
+  color: aqua;
+}
+
+.socialLinks h3{
+  font-size: 25px;
+  margin-bottom: -2%;
+}
+
+.socialLinks ul {
+list-style-type: none;
+display: inline-flex;
+}
+
+.socialLinks ul a:hover{
+border-bottom: 2px solid rgb(250, 125, 5);
+border-left: 2px solid rgb(250, 125, 5);
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+.socialLinks ul li{
+  padding-right: 30%;
+}
+
+.downloadCv{
+  text-align: center;
+}
+
+.downloadCv button{
+border: 2px solid aqua;
+border-radius: 10px;
+padding: 1%;
+font-size: 20px;
+width: 50%;
+background-color: transparent;
+color: rgb(250, 125, 5);
+box-shadow: 0px 0px 25px ;
+}
+
+.downloadCv button:hover{
+  border: 2px solid rgb(250, 125, 5);
+  box-shadow: 0px 0px 25px aqua;
+  color: aqua;
+}
+
+.rightContainer{
+   box-shadow: 0px 0px 2px  rgb(250, 125, 5);
+  border-radius: 10px;
+  padding: 2% 5%;
+  width: 50%;
+  color: rgb(250, 125, 5);
+}
+
+.rightContainer label{
+  display: block;
+  margin-top: 4%;
+}
+
+.rightContainer input{
+  width: 90%;
+  padding: 2%;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #333;
+  color: aqua;
+}
+
+
+.rightContainer textarea{
+  width: 90%;
+  padding: 2%;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #333;
+  height: 90px;
+    color: aqua;
+}
+
+.rightContainer button{
+  display: block;
+  justify-self: center;
+  margin-top: 5%;
+ border: 2px solid aqua;
+border-radius: 10px;
+padding: 1%;
+font-size: 20px;
+width: 50%;
+background-color: transparent;
+color: rgb(250, 125, 5);
+box-shadow: 0px 0px 25px 
+}
+
+
+.rightContainer button:hover{
+  border: 2px solid rgb(250, 125, 5);
+  box-shadow: 0px 0px 25px aqua;
+  color: aqua;
+}
+
+.visitorDetails{
+      box-shadow: 0px 0px 20px  rgb(250, 125, 5);
+  color: aqua;
+  background-color: black;
+  margin:  5%;
+  border-radius: 10px;
+  padding: 3%;
+  display: block;
+}
+
+.visitorDetails h3{
+      color:  rgb(250, 125, 5);
+      text-align: center;
+      font-size: 35px;
+}
+
+.visitorDetails h3 span{
+ color: aqua;
+}
+
+.table{
+  background-color: #333;
+  width: 100%;
+    border-radius: 10px;
+}
+
+
+table {
+  margin-left: 2%;
+  border-collapse: collapse;
+  line-height: 40px;
+  width: 97%;
+  border-radius: 10px;
+
+}
+
+table thead tr td {
+  border-bottom: 2px solid rgb(224, 123, 5);
+  color: rgb(250, 125, 5);
+  font-weight: 600;
+}
+
+td a{
+  text-decoration: none;
+  color: inherit;
+}
+
+table thead tr td:first-child {
+width: 3%;
+}
+
+table thead tr td:nth-child(2){
+width: 20%;
+}
+
+table thead tr td:nth-child(3){
+width: 20%;
+}
+
+table thead tr td:nth-child(4){
+width: 40%;
+}
+
+table tbody tr td:nth-child(1){
+  color: rgb(250, 125, 5);
+}
+
+td {
+  padding: .2% .5%;
+}
+
+table tbody tr {
+  border-bottom: 1px solid black;
+  transition: all 2s linear;
+}
+
+table tbody tr td{
+  border-bottom: 1px solid black;
+}
+
+table tbody tr:nth-child(even) {
+  color: #035c5f;
+}
+
+.numberOfVisitors{
+  box-shadow: 0px 0px 20px  rgb(250, 125, 5);
+  color: aqua;
+  background-color: black;
+  width: 10%;
+  margin:  5%;
+  border-radius: 10px;
+  padding: .5%;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+
+.head{
+  color: rgb(250, 125, 5);
+  margin-right: 10%;
+   padding: 5%;
+}
+
+.numbers{
+  background-color: #333;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+
+/*Contact  Styling Ends*/
+
+
+
+/*Footer  Styling Starts*/
+
+.footer{
+  height: 20px;
+  background-color: #222;
+  margin-top: 5%;
+  text-align: center;
+  color: aqua;
+  font-weight: 100;
+  font-size: medium;
+  padding: 1%;
+}
+
+/*Footer  Styling Ends*/
