@@ -26,7 +26,7 @@ if (visitorEmail === "ancemwasy1029@gmail.com" && visitorName === "0753768522" &
   {
      
     console.log("rendered");
-    fetch("http://localhost:8000/visitorMessages")
+    fetch("../../dataBase/data.json")
       .then((res) => {
         return res.json();
       })
@@ -39,7 +39,7 @@ if (visitorEmail === "ancemwasy1029@gmail.com" && visitorName === "0753768522" &
       })
 
 }else{
-    fetch("http://localhost:8000/visitorMessages", {
+    fetch("../../dataBase/data.json", {
       method: "POST",
       header: {
         "content-type": "application-json",

@@ -22,7 +22,9 @@ code {
   text-align: center;
 }
 
-
+* {
+  box-sizing: border-box;
+}
 
 .title{
   font-size: 30px;

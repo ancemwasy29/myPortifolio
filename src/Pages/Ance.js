@@ -7,9 +7,11 @@ import Works from "../Components/Works";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer"
 const Ance = () => {
+
      return ( 
 
           <div>
+         
     <Header />
     <div className="mainContent">
     <Home />
