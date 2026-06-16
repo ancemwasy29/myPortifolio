@@ -18,43 +18,34 @@ const Contact = () => {
     const [visitorMessage, setVisitorMessage] = useState("")
     const [visitorDetails, setVisitorDetails] = useState("")
 
-    const handleMessage = (e) => {
-    e.preventDefault();
-    const sentOn = Date()
-    const visitorDetails ={visitorEmail, visitorName, visitorMessage, sentOn}
-if (visitorEmail === "ancemwasy1029@gmail.com" && visitorName === "0753768522" && visitorMessage === "ancecode the coded code") 
-  {
-     
-    console.log("rendered");
-    fetch("../../dataBase/data.json")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setVisitorDetails(data);
-      })
-      .catch((err) => {
-        console.log("Error Is..." + err);
-      })
+  const handleMessage = (e) => {
+  e.preventDefault();
 
-}else{
-    fetch("../../dataBase/data.json", {
-      method: "POST",
-      header: {
-        "content-type": "application-json",
-      },
-      body: JSON.stringify(visitorDetails),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        alert("Message Sent");
-        console.log(Date())
-      })
-      .catch((err) => console.log(err.message));
-}
+  const sentOn = new Date().toISOString();
+
+  const visitorDetails = {
+    visitorEmail,
+    visitorName,
+    visitorMessage,
+    sentOn,
   };
 
+  fetch("https://your-worker-url.workers.dev/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(visitorDetails),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      alert("Message Sent 🚀");
+      console.log("Success:", data);
+    })
+    .catch((err) => {
+      console.log("Error:", err.message);
+    });
+};
 
   return (
     <div style={{ paddingTop: "5%" }} id="contactMe">

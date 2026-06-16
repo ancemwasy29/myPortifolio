@@ -3,7 +3,8 @@ import anceDP from "../images/anceDP.jpg";
 import {
   JavascriptRounded,
   HtmlRounded,
-  CssRounded
+  CssRounded,
+  PhpRounded
 } from "@mui/icons-material";
 
 import { FaReact } from "react-icons/fa6";
@@ -19,7 +20,7 @@ const About = () => {
           <src href={anceDP} />{" "}
         </div>
         <div className="aboutInfo">
-          <h1> About Me </h1>
+          <h1> About <span> Me </span> </h1>
           <p>
             I'm a Web Developer, With High Passion Of Developing Products With
             Relevance To Current Technological Development That's Why I Keep
@@ -69,10 +70,11 @@ const About = () => {
                 </h3>
                 <p>
                 <ul>
-                <li> <JavascriptRounded sx={{ fontSize: "25px", border: "2px solid ", borderRadius: "50%" }} /> Java Script <div className="progContainer"> <div className="progBar"></div> </div> </li>
+                <li> <JavascriptRounded sx={{ fontSize: "25px", border: "2px solid ", borderRadius: "50%" }} /> Js <div className="progContainer"> <div className="progBar"></div> </div> </li>
                 <li> <JavascriptRounded  sx={{ fontSize: "25px", border: "2px solid ", borderRadius: "50%" }}  /> Python</li>
                 <li> <HtmlRounded sx={{ fontSize: "25px", border: "2px solid ", borderRadius: "50%" }} /> HTML </li>
                 <li> <CssRounded  sx={{ fontSize: "25px", border: "2px solid ", borderRadius: "50%" }}  /> CSS </li>
+               <li> <PhpRounded  sx={{ fontSize: "25px", border: "2px solid ", borderRadius: "50%" }}  /> PHP </li>
                 </ul>
                    
                 </p>

@@ -6,6 +6,7 @@ import Services from "../Components/Services";
 import Works from "../Components/Works";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer"
+import SideBar from "../Components/SideBar";
 const Ance = () => {
 
      return ( 
@@ -14,6 +15,7 @@ const Ance = () => {
          
     <Header />
     <div className="mainContent">
+    <SideBar />
     <Home />
     <About />
     <Services />
